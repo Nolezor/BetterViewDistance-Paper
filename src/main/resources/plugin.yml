@@ -1,0 +1,13 @@
+name: BetterViewDistance
+version: '${project.version}'
+main: me.nolezor.betterviewdistance.BetterViewDistance
+api-version: 1.19
+authors: [ Nolezor ]
+description: A way to customize view distance for a single player
+commands:
+  setplayerviewdistance:
+    description: Sets a custom view distance for a single player
+    usage: /<command> <player name> <view distance>
+    aliases: [playervd, setpvd, spvd]
+    permission-message: You do not have permission to use this command.
+    permission: betterviewdistance.setplayerviewdistance
