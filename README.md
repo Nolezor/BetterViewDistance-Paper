@@ -21,3 +21,4 @@ betterviewdistance.setplayerviewdistance
  
  For any problems contact me on Discord: *Nolezor#9398*
  
+*Note.* This is my first plugin, don't be too harsh pls.
