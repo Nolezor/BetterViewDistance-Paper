@@ -1,7 +1,7 @@
 name: BetterViewDistance
 version: '${project.version}'
 main: me.nolezor.betterviewdistance.BetterViewDistance
-api-version: 1.19
+api-version: '1.20'
 authors: [ Nolezor ]
 description: A way to customize view distance for a single player
 commands:
