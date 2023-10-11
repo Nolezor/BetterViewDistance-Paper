@@ -26,9 +26,6 @@ public final class BetterViewDistance extends JavaPlugin {
 
         getCommand("setplayerviewdistance").setExecutor(new SetViewDistanceCommand());
         getCommand("setplayerviewdistance").setTabCompleter(new SetViewDistanceTabCompleter());
-
-        getLogger().info(ChatColor.GREEN + "BetterViewDistance finished loading.");
-
     }
 
     @Override
