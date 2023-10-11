@@ -11,6 +11,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class SetViewDistanceTabCompleter implements TabCompleter {
@@ -31,7 +33,6 @@ public class SetViewDistanceTabCompleter implements TabCompleter {
 
         if (args.length == 2) {
             List<String> suggestedViewDistances = new ArrayList<>();
-            suggestedViewDistances.add(String.valueOf(plugin.getServer().getViewDistance()));
             int tempViewDistance = 4;
             while (tempViewDistance <= maxViewDistance) {
                 suggestedViewDistances.add(String.valueOf(tempViewDistance));

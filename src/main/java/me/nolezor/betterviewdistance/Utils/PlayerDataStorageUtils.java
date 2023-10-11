@@ -9,6 +9,7 @@ import org.bukkit.plugin.Plugin;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.UUID;
 
 public class PlayerDataStorageUtils {
     private static final Plugin plugin = BetterViewDistance.getPlugin();
@@ -58,14 +59,14 @@ public class PlayerDataStorageUtils {
     public static void fixData() {
         for (PlayerData data: playersData) {
             if (plugin.getServer().getViewDistance() == data.getCurrentViewDistance()) {
-                plugin.getServer().getPlayer(data.getPlayerUUID()).setViewDistance(plugin.getServer().getViewDistance());
+                plugin.getServer().getPlayer(UUID.fromString(data.getPlayerUUID())).setViewDistance(plugin.getServer().getViewDistance());
                 playersData.remove(data);
             }
         }
     }
 
     public static void setPlayerViewDistance(PlayerData data) {
-        Player player = plugin.getServer().getPlayer(data.getPlayerUUID());
+        Player player = plugin.getServer().getPlayer(UUID.fromString(data.getPlayerUUID()));
         player.setViewDistance(data.getCurrentViewDistance());
     }
 }
